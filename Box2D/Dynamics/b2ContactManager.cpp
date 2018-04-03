@@ -182,12 +182,6 @@ void b2ContactManager::AddPair(void* proxyUserDataA, void* proxyUserDataB)
 	b2Fixture* fixtureA = proxyA->fixture;
 	b2Fixture* fixtureB = proxyB->fixture;
 
-    // If any of the fixture is null?
-    if (!fixtureA || !fixtureB)
-    {
-        return;
-    }
-
 	int32 indexA = proxyA->childIndex;
 	int32 indexB = proxyB->childIndex;
 
